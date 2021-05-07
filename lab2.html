@@ -1,88 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Lab2 | Do Thanh Binh</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Binh<span>.</span></a>
-            <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="oi oi-menu"></span> Menu
-            </button>
-            <div class="collapse navbar-collapse" id="ftco-nav">
-                <ul class="navbar-nav nav ml-auto">
-                    <li class="nav-item"><a href="#" class="nav-link"><span>Home</span></a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link"><span>About</span></a></li>
-                    <li class="nav-item"><a href="lab1.html" class="nav-link"><span>Lab 1</span></a></li>
-                    <li class="nav-item"><a href="lab2.html" class="nav-link actives"><span>Lab 2</span></a></li>
-                    <li class="nav-item"><a class=" nav-link" data-toggle="dropdown" href="lab3.html">Lab 3 <span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="f-pattern.html">F-pattern</a></li>
-                        <li><a href="z-pattern.html">Z-pattern</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item"><a href="lab4.html" class="nav-link"><span>Lab 4</span></a></li>
-                    <li class="nav-item"><a href="lab5.html" class="nav-link"><span>Lab 5</span></a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>   
 
-     <!-- Tabs -->
-     <section style="margin-top: 105px;" class="mr-5 ml-5 tabs-section">
-        <nav>
-            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-              <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home-lab" role="tab"
-                aria-controls="nav-home" aria-selected="true">Requirement</a>
-              <a class="nav-item nav-link actice" id="nav-profile-tab" data-toggle="tab" href="#nav-design-lab"
-                role="tab" aria-controls="nav-design" aria-selected="false">Design</a>
-              <a class="nav-item nav-link actice" id="nav-implement-tab" data-toggle="tab" href="#nav-implement-lab"
-                role="tab" aria-controls="nav-implement" aria-selected="false">Implement</a>
-            </div>
-          </nav>
-          <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home-lab" role="tabpanel" aria-labelledby="nav-home-tab">
-                <ul>
-                    <p><strong>Yêu cầu: </strong></p>
-                    <li>
-                        <p> <strong>(1)</strong> Tạo ra một <strong>user scenario</strong></p>
-                    </li>
-                    <li>
-                        <p> <strong>(2)</strong> Chọn 1 bước trong <strong>user scenario</strong> để thiết kế 1 form giao diện
-                            Web trên công cụ thiết kế đã chọn. <br/>
-                            Sau đó tạo ra <strong>file html</strong> tương ứng cho thiết kế này.</p>
-                    </li>
-                    <li>
-                        <p>Upload lên <strong>Firebase / github</strong>: trong file html có chèn hình ảnh của
-                            user scenario ở <strong>(1)</strong> và đường dẫn của file thiết kế ở <strong>(2)</strong>.</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="tab-pane fade" id="nav-design-lab" role="tabpanel" aria-labelledby="nav-design-tab">
-              Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat
-              veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit
-              non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim
-              occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit.
-              Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit
-              occaecat anim ullamco ad duis occaecat ex.
-            </div>
-            <!-- implement -->
-            <div class="tab-pane fade" id="nav-implement-lab" role="tabpanel" aria-labelledby="nav-implement-tab">
-               
+<head>
+  <title>Lab2 | Do Thanh Binh</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/lab2.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target"
+  id="ftco-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Binh<span>@</span></a>
+    <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+      data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="oi oi-menu"></span> Menu
+    </button>
+    <div class="collapse navbar-collapse" id="ftco-nav">
+      <ul class="navbar-nav nav ml-auto">
+        <li class="nav-item"><a href="index.html" class="nav-link"><span>Home</span></a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link"><span>About</span></a></li>
+        <li class="nav-item"><a href="lab1.html" class="nav-link"><span>Lab 1</span></a></li>
+        <li class="nav-item"><a href="#" class="nav-link actives"><span>Lab 2</span></a></li>
+        <li class="nav-item"><a href="lab3.html" class="nav-link"><span>Lab 3</span></a></li>
+        <li class="nav-item"><a href="lab4.html" class="nav-link"><span>Lab 4</span></a></li>
+        <li class="nav-item"><a href="result.html" class="nav-link"><span>Result</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Tabs -->
+  <section style="margin-top: 105px;" class="mr-5 ml-5 tabs-section">
+    <nav>
+      <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home-lab" role="tab"
+          aria-controls="nav-home" aria-selected="true">Requirement</a>
+        <a class="nav-item nav-link actice" id="nav-profile-tab" data-toggle="tab" href="#nav-user-lab" role="tab"
+          aria-controls="nav-user" aria-selected="false">User Scenario</a>
+        <a class="nav-item nav-link actice" id="nav-profile-tab" data-toggle="tab" href="#nav-design-lab" role="tab"
+          aria-controls="nav-design" aria-selected="false">Design</a>
+        <a class="nav-item nav-link actice" id="nav-implement-tab" data-toggle="tab" href="#nav-implement-lab"
+          role="tab" aria-controls="nav-implement" aria-selected="false">Implement</a>
+      </div>
+    </nav>
+    <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-home-lab" role="tabpanel" aria-labelledby="nav-home-tab">
+        <ul>
+          <p><strong>Yêu cầu: </strong></p>
+          <li>
+            <p> <strong>(1)</strong> Tạo ra một <strong>user scenario</strong></p>
+          </li>
+          <li>
+            <p> <strong>(2)</strong> Chọn 1 bước trong <strong>user scenario</strong> để thiết kế 1 form giao diện
+              Web trên công cụ thiết kế đã chọn. <br />
+              Sau đó tạo ra <strong>file html</strong> tương ứng cho thiết kế này.</p>
+          </li>
+          <li>
+            <p>Upload lên <strong>Firebase / github</strong>: trong file html có chèn hình ảnh của
+              user scenario ở <strong>(1)</strong> và đường dẫn của file thiết kế ở <strong>(2)</strong>.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-pane fade" id="nav-user-lab" role="tabpanel" aria-labelledby="nav-user-tab">
+        <img src="images/lab2.png" alt="Image user scenario">
+      </div>
+      <div class="tab-pane fade" id="nav-design-lab" role="tabpanel" aria-labelledby="nav-design-tab">
+        <div class="row p-3">
+          <div class="col ml-5">
+            <h3 class="text-center">1. Design on papper</h3>
+            <img src="images/l2-papper.jpg" height="400px" width="500px" alt="">
+            <div class="text-center mt-2">
+              <button class="btn btn-info ">
+                <a href="images/l2-papper.jpg" download="19130017-l2-papper">Download</a>
+              </button>
             </div>
           </div>
-    </section>
+          <div class="col ml-5 mb-2 ">
+            <h3 class="text-center">2. Design on HTML </h3>
+            <img src="images/l2-html.png" alt="" height="400px" width="500px">
+            <div class="text-center mt-2">
+              <button class="btn btn-info">
+                <a href="images/l2-html.png" download="19130017-l2-html"> Download </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- implement -->
+      <div class="tab-pane fade" id="nav-implement-lab" role="tabpanel" aria-labelledby="nav-implement-tab">
+        <!-- code reference -->
+        <div class='container'>
+          <div class='window'>
+            <div class='order-info'>
+              <div class='order-info-content'>
+                <h3 class="mt-2">Giỏ hàng</h3>
+                <!-- sp1 -->
+                <div class='line'></div>
+                <table class='order-table'>
+                  <tbody>
+                    <tr>
+                      <td><img src="images/sp2.jpg" class='full-width'></img>
+                      </td>
+                      <td>
+                        <span class='thin'>Nike Air Force 1 Easter</span>
+                        <br>
+                        <span class='thin small'> Color: Bạc/Trắng, Size: 37</span>
+                        <br>
+                        <span>Số lượng: 1 </span>
+                        <br><br>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class='price'>
+                          $73.91
+                          <span>$121.74</span>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- sp1 -->
+                <!-- sp2 -->
+                <div class='line'></div>
+                <table class='order-table'>
+                  <tbody>
+                    <tr>
+                      <td><img src="images/sp1.png" class='full-width'></img>
+                      </td>
+                      <td>
+                        <span class='thin'>TIMBERLAND Giày Cổ Cao </span>
+                        <br>
+                        <span class='thin small'> Color: Black, Size: 37</span>
+                        <br>
+                        <span>Số lượng: 1 </span>
+                        <br><br>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class='price'>
+                          $134.74
+                          <span>$260.44</span>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- sp2 -->
+                <div class='line'></div>
+                <table class='order-table'>
+                </table>
+                <div class='total'>
+                  <span style='float:left;'>
+                    <div class='thin dense'>VAT 19%</div>
+                    <div class='thin dense'>Delivery</div>
+                    TOTAL
+                  </span>
+                  <span style='float:right; text-align:right;'>
+                    <div class='thin dense'>$39.64</div>
+                    <div class='thin dense'>$4.95</div>
+                    $248.29
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class='credit-info'>
+              <div class='credit-info-content'>
+                <table class='half-input-table'>
+                  <tr>
+                    <td>Please select your card: </td>
+                    <td>
+                      <div class='dropdown' id='card-dropdown'>
+                        <div class='dropdown-btn' id='current-card'>Visa</div>
+                        <div class='dropdown-select'>
+                          <ul>
+                            <li>Master Card</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+                <img src='https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png' height='80'
+                  class='credit-card-image' id='credit-card-image'></img>
+                <!-- form -->
+                <form>
+                  <div class="form-row">
+                    <div class="col form-group">
+                      <label class="">Card Number</label>
+                      <input type="text" class="form-control" id="num" placeholder="0000 0000 0000 1234" required>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col form-group">
+                      <label class="">Card Holder</label>
+                      <input type="text" class="form-control" id="holder" placeholder="Nguyen Van A" required>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col form-group">
+                      <label class="">Expires</label>
+                      <input type="text" class="form-control" id="exp" placeholder="mm/yy" required>
+                    </div>
+                    <div class="col form-group">
+                      <label class="">CVV</label>
+                      <input type="text" class="form-control" id="cvv" placeholder="CVV" required>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group ">
+                      <button class="pay-btn" onclick="check()" id="checkOut">
+                        Checkout
+                      </button>
+                    </div>
+                </form>
+                <!-- end form -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end code reference -->
+      </div>
+    </div>
+  </section>
 
-    <!-- scrip -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>>
+  <!-- scrip -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/lab2.js"></script>
 </body>
+
 </html>

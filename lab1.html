@@ -1,200 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Lab1 | Do Thanh Binh</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <title>Lab1 | Do Thanh Binh</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.min.js"></script>
 
-</head>
-<body>    
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Binh<span>.</span></a>
-            <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="oi oi-menu"></span> Menu
-            </button>
-            <div class="collapse navbar-collapse" id="ftco-nav">
-                <ul class="navbar-nav nav ml-auto">
-                    <li class="nav-item"><a href="index.html" class="nav-link"><span>Home</span></a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link"><span>About</span></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link actives"><span>Lab 1</span></a></li>
-                    <li class="nav-item"><a href="lab2.html" class="nav-link"><span>Lab 2</span></a></li>
-                    <li class="nav-item"><a class=" nav-link" data-toggle="dropdown" href="lab3.html">Lab 3 <span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="f-pattern.html">F-pattern</a></li>
-                        <li><a href="z-pattern.html">Z-pattern</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item"><a href="lab4.html" class="nav-link"><span>Lab 4</span></a></li>
-                    <li class="nav-item"><a href="lab5.html" class="nav-link"><span>Lab 5</span></a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>   
-
-     <!-- Tabs -->
-    <section style="margin-top: 105px;" class="mr-5 ml-5 tabs-section">
-        <nav>
-            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-              <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home-lab" role="tab"
-                aria-controls="nav-home" aria-selected="true">Requiment</a>
-              <a class="nav-item nav-link actice" id="nav-profile-tab" data-toggle="tab" href="#nav-design-lab"
-                role="tab" aria-controls="nav-design" aria-selected="false">Design</a>
-              <a class="nav-item nav-link actice" id="nav-implement-tab" data-toggle="tab" href="#nav-implement-lab"
-                role="tab" aria-controls="nav-implement" aria-selected="false">Implement</a>
-            </div>
-          </nav>
-          <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home-lab" role="tabpanel" aria-labelledby="nav-home-tab">
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target"
+    id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Binh<span>@</span></a>
+      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+        data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav nav ml-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link"><span>Home</span></a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link"><span>About</span></a></li>
+          <li class="nav-item"><a href="#" class="nav-link actives"><span>Lab 1</span></a></li>
+          <li class="nav-item"><a href="lab2.html" class="nav-link "><span>Lab 2</span></a></li>
+          <li class="nav-item"><a href="lab3.html" class="nav-link"><span>Lab 3</span></a></li>
+          <li class="nav-item"><a href="lab4.html" class="nav-link"><span>Lab 4</span></a></li>
+          <li class="nav-item"><a href="result.html" class="nav-link"><span>Result</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Tabs -->
+  <section style="margin-top: 105px;" class="mr-5 ml-5 tabs-section">
+    <nav>
+      <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home-lab" role="tab"
+          aria-controls="nav-home" aria-selected="true">Requirement</a>
+        <a class="nav-item nav-link actice" id="nav-profile-tab" data-toggle="tab" href="#nav-design-lab" role="tab"
+          aria-controls="nav-design" aria-selected="false">Design</a>
+        <a class="nav-item nav-link actice" id="nav-implement-tab" data-toggle="tab" href="#nav-implement-lab"
+          role="tab" aria-controls="nav-implement" aria-selected="false">Implement</a>
+      </div>
+    </nav>
+    <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-home-lab" role="tabpanel" aria-labelledby="nav-home-tab">
+        <ul>
+          <li>
+            <p>
+              <b> Yêu cầu: </b> Chọn 1 đối tượng bất kỳ trong thế giới thực, ví dụ lớp môn học,
+              giảng viên,… Sau đó thiết kế chức năng Quản lý đối tượng đó trên html bao gồm các
+              tính năng thêm, sửa, xóa, tìm kiếm cho đối tượng đó. Ví dụ, làm chức năng Quản lý
+              Sinh viên, bao gôm tính năng thêm, sửa, xóa, tìm kiếm. Chú ý: Các thành viên trong
+              nhóm không được chọn các đối tượng giống nhau.
+            </p>
+          </li>
+          <li>
+            <p><strong>Hướng dẫn: </strong>Tạo 1 menu <strong>Lab 1</strong> trên website cá nhân (sử dụng
+              thẻ "a" trong
+              html) bao gồm các tab sau:
+            <ul>
+              <li>
+                <p>Tab <strong>Requirement</strong>: copy lại nội dung của phần 1 ở trên <strong>(Yêu
+                    cầu)</strong> vào
+                  đây (và trình bày lại cho đẹp)</p>
+              </li>
+              <li>
+                <p>Tab <strong>Design</strong>: để link tới các file sau đây:</p>
                 <ul>
-                    <li>
-                        <p>
-                            <b> Yêu cầu: </b> Chọn 1 đối tượng bất kỳ trong thế giới thực, ví dụ lớp môn học, 
-                            giảng viên,… Sau đó thiết kế chức năng Quản lý đối tượng đó trên html bao gồm các 
-                            tính năng thêm, sửa, xóa, tìm kiếm cho đối tượng đó. Ví dụ, làm chức năng Quản lý 
-                            Sinh viên, bao gôm tính năng thêm, sửa, xóa, tìm kiếm. Chú ý: Các thành viên trong 
-                            nhóm không được chọn các đối tượng giống nhau. 
-                        </p>
-                    </li>
-                    <li>
-                        <p><strong>Hướng dẫn: </strong>Tạo 1 menu <strong>Lab 1</strong> trên website cá nhân (sử dụng thẻ "a" trong
-                            html) bao gồm các tab sau:
-                            <ul>
-                                <li>
-                                    <p>Tab <strong>Requirement</strong>: copy lại nội dung của phần 1 ở trên <strong>(Yêu cầu)</strong> vào
-                                        đây (và trình bày lại cho đẹp)</p>                        
-                                </li>
-                                <li>
-                                    <p>Tab <strong>Design</strong>: để link tới các file sau đây:</p>
-                                    <ul>
-                                        <li>
-                                            <p>Thiết kế trên giấy (chụp lại ảnh)</p>
-                                        </li>
-                                        <li>
-                                            <p>Chụp lại màn hình đã thiết kế trên html</p>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <p> Tab <strong>Implement</strong>: là trang html của chức năng Quản lý đó</p>
-
-                                </li>
-                            </ul>
-                        
-
-                    </p>
-                    </li>
-                    <li>
-                        <p> Sau khi làm xong, upload toàn bộ lên website cá nhân trên firebase.</p>
-                    </li>
+                  <li>
+                    <p>Thiết kế trên giấy (chụp lại ảnh)</p>
+                  </li>
+                  <li>
+                    <p>Chụp lại màn hình đã thiết kế trên html</p>
+                  </li>
                 </ul>
-            </div>
-            <div class="tab-pane fade" id="nav-design-lab" role="tabpanel" aria-labelledby="nav-design-tab">
-              Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat
-              veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit
-              non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim
-              occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit.
-              Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit
-              occaecat anim ullamco ad duis occaecat ex.
-            </div>
-            <!-- implement -->
-            <div class="tab-pane fade" id="nav-implement-lab" role="tabpanel" aria-labelledby="nav-implement-tab">
-                <h2 class="ml-5"> Rental book management</h2>
-                <div>
-                    <form>
-                        <div class="form-row">
-                          <div class="col form-group">
-                            <label class="mt-2 ml-2 mb-2 mr-2 h5">Borrower name</label>
-                            <input type="text" class="form-control" placeholder="Enter borrower name" required>
-                          </div>
-                        </div>
+              </li>
+              <li>
+                <p> Tab <strong>Implement</strong>: là trang html của chức năng Quản lý đó</p>
 
-                        <div class="form-row">
-                            <div class="col form-group">
-                                <label class="mt-2 ml-2 mb-2 mr-2 h5">Title</label>
-                                <input type="text" class="form-control" placeholder="Enter title name" required>
-                            </div>
-                            <div class="col form-group">
-                                <label class="mt-2 ml-2 mb-2 mr-2 h5">ID Register</label>
-                                <input type="text" class="form-control" placeholder="Enter id register" required>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col form-group">
-                                <label for="inputState" class="h5">Category</label>
-                                <select id="inputState" class="form-control">
-                                <option selected>Novel</option>
-                                <option>Comic</option>
-                                <option>Anecdote</option>
-                                <option>Autobiography</option>
-                                <option>Folk Tale && Fairy Tale</option>
-                                <option>Myth</option>
-                                <option>Fable</option>
-                                <option>Short story</option>
-                                <option>Detective story</option>
-                                <option>Funny story</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col form-group">
-                                <label class="mt-2 ml-2 mb-2 mr-2 h5">Date borrowed</label>
-                                <input type="date" class="form-control" required>                        
-                            </div>
-                            <div class="col form-group">
-                                <label class="mt-2 ml-2 mb-2 mr-2 h5">Date return</label>
-                                <input type="date" class="form-control" required>                        
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group ">
-                                <input type="button" value="Save" class="form-button">
-                            </div>
-                        </div>
-                    </form>
-                </div>
+              </li>
+            </ul>
 
-                <div>
-                    <table id="table" class="table">
-                        <thead>
-                            <tr>
-                                <th>Borrower</th>
-                                <th>Titile</th>
-                                <th>ID Register</th>
-                                <th>Category</th>
-                                <th>Date borrowed </th>
-                                <th>Date returned</th>
-                                <th>Remove</th>
-                                <th>Edit</th>
-                            </tr>
-                        </thead>
-                        <tbody id="myTable">
-                            <tr>
-                                <td class="borrower">Đỗ Thanh Bình</td>
-                                <td class="titles">Harry Poster</td>
-                                <td class="idRes">binh1511</td>
-                                <td class="category">Novel</td>
-                                <td class="dateBor">20/4/2021</td>
-                                <td class="returnBor">23/4/2021</td>
-                                <td> <a class="remove"></a> <i class="fa fa-remove"></i></td>
-                                <td> <a class="edit"></a> <i class="fa fa-edit"></i></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+
+            </p>
+          </li>
+          <li>
+            <p> Sau khi làm xong, upload toàn bộ lên website cá nhân trên firebase.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-pane fade" id="nav-design-lab" role="tabpanel" aria-labelledby="nav-design-tab">
+        <div class="row p-3">
+          <div class="col ml-5">
+            <h3 class="text-center">1. Design on papper</h3>
+            <img src="images/l1-1.jpg" height="400px" width="500px" alt="">
+            <div class="text-center mt-2">
+              <button class="btn btn-info ">
+                <a href="images/l1-1.jpg" download="19130017-l1-1-papper">Download</a>
+              </button>
             </div>
           </div>
-    </section>
-          
-    
+          <div class="col ml-5 mb-2 ">
+            <h3 class="text-center">1. Design on papper </h3>
+            <img src="images/l1-2.jpg" alt="" height="400px" width="500px">
+            <div class="text-center mt-2">
+              <button class="btn btn-info">
+                <a href="images/l1-2.jpg" download="19130017-l1-1-html"> Download </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row p-3">
+          <div class="col ml-5">
+            <h3 class="text-center">2. Design on HTML</h3>
+            <img src="images/l1-1-html.png" height="400px" width="100%" alt="">
+            <div class="text-center mt-2">
+              <button class="btn btn-info ">
+                <a href="images/l1-1-html.png" download="19130017-l1-1-papper">Download</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row p-3">
+          <div class="col ml-5">
+            <h3 class="text-center">2. Design on HTML</h3>
+            <img src="images/l1-2-html.png" height="400px" width="100%" alt="">
+            <div class="text-center mt-2">
+              <button class="btn btn-info ">
+                <a href="images/l1-2-html.png" download="19130017-l1-2-papper">Download</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="nav-implement-lab" role="tabpanel" aria-labelledby="nav-implement-tab">
+        <!-- implement -->
+        <div class="d-flex justify-content-around">
+          <h2 class=""> Rental book management</h2>
+          <button id="show" class="btnAdd" onclick="showForm()">Add</button>
+          <button id="hide" class="btnClose" onclick="showForm()">Close</button>
+        </div>
 
-     <!-- scrip -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+        <div id="form-open" class="form-open">
+          <form>
+            <div class="form-row">
+              <div class="col form-group">
+                <label class="mt-2 ml-2 mb-2 mr-2 h5">ID</label>
+                <input type="text" class="form-control" id="idRes" placeholder="Enter id register" required>
+              </div>
+              <div class="col form-group">
+                <label class="mt-2 ml-2 mb-2 mr-2 h5">Borrower name</label>
+                <input type="text" class="form-control" id="nameBr" placeholder="Enter borrower name" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col form-group">
+                <label class="mt-2 ml-2 mb-2 mr-2 h5">Title</label>
+                <input type="text" class="form-control" id="title" placeholder="Enter title name" required>
+              </div>
+              <div class="col form-group">
+                <label for="inputState" class="mt-2 ml-2 mb-2 mr-2 h5">Category</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Novel</option>
+                  <option>Comic</option>
+                  <option>Anecdote</option>
+                  <option>Autobiography</option>
+                  <option>Folk Tale && Fairy Tale</option>
+                  <option>Myth</option>
+                  <option>Fable</option>
+                  <option>Book</option>
+                  <option>Dictionary</option>
+                  <option>Funny story</option>
+                </select>
+              </div>
+
+            </div>
+
+            <div class="form-row">
+              <div class="col form-group">
+                <label class="mt-2 ml-2 mb-2 mr-2 h5">Date borrowed</label>
+                <input type="date" class="form-control" id="dateBor" required>
+              </div>
+              <div class="col form-group">
+                <label class="mt-2 ml-2 mb-2 mr-2 h5">Date return</label>
+                <input type="date" class="form-control" id="dateReturn" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group ">
+                <button class="form-button" id="saveBtn">
+                  Save
+                </button>
+              </div>
+            </div>
+          </form>
+          <!-- end form -->
+        </div>
+        <!-- search button -->
+        <div>
+          <form class="row ml-2">
+            <div class="d-flex justify-content-end">
+              <div class="col form-group">
+                <input type="text" class="form-control" id="searchInput" placeholder="Search">
+              </div>
+            </div>
+          </form>
+          <!-- end search -->
+          <table id="table" class="table">
+            <!-- table head -->
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Borrower</th>
+                <th>Titile</th>
+                <th>Category</th>
+                <th>Date borrowed </th>
+                <th>Date returned</th>
+                <th>Function</th>
+              </tr>
+            </thead>
+            <!-- end table head -->
+            <!-- content table -->
+            <tbody id="mytable">
+              <tr>
+                <td class="idRes">02</td>
+                <td class="nameBr">Do Thanh Binh</td>
+                <td class="title">Harry Poster</td>
+                <td class="inputState">Novel</td>
+                <td class="bor">2021-4-20</td>
+                <td class="return">2021-4-23</td>
+                <td>
+                  <a class="remove" data-toggle="tooltip" title="Delete" href="#"> <i class="fa fa-remove"></i></a>
+                  <!-- <a class="edit" data-toggle="tooltip" title="Edit" href="#"> <i class="fa fa-edit"></i></a> -->
+                </td>
+              </tr>
+              <tr>
+                <td class="idRes">02</td>
+                <td class="nameBr">Do Thanh Binh</td>
+                <td class="title">Java Core</td>
+                <td class="inputState">Book</td>
+                <td class="bor">2021-4-20</td>
+                <td class="return">2021-4-23</td>
+                <td>
+                  <a class="remove" data-toggle="tooltip" title="Delete" href="#"> <i class="fa fa-remove"></i></a>
+                  <!-- <a class="edit" data-toggle="tooltip" title="Edit" href="#"> <i class="fa fa-edit"></i></a> -->
+                </td>
+              </tr>
+              <tr>
+                <td class="idRes">02</td>
+                <td class="nameBr">Do Thanh Binh</td>
+                <td class="title">Head First Design Patterns</td>
+                <td class="inputState">Book</td>
+                <td class="bor">2021-4-20</td>
+                <td class="return">2021-4-23</td>
+                <td>
+                  <a class="remove" data-toggle="tooltip" title="Delete" href="#"> <i class="fa fa-remove"></i></a>
+                  <!-- <a class="edit" data-toggle="tooltip" title="Edit" href="#"> <i class="fa fa-edit"></i></a> -->
+                </td>
+              </tr>
+              <tr>
+                <td class="idRes">05</td>
+                <td class="borrower">Huynh Huu An</td>
+                <td class="titles">Greek mythology</td>
+                <td class="category">Myth</td>
+                <td class="dateBor">2021-4-21</td>
+                <td class="returnBor">2021-4-26</td>
+                <td>
+                  <a class="remove" data-toggle="tooltip" title="Delete" href="#"> <i class="fa fa-remove"></i></a>
+                  <!-- <a class="edit" data-toggle="tooltip" title="Edit" href="#"> <i class="fa fa-edit"></i></a> -->
+                </td>
+              </tr>
+              <tr>
+                <td class="idRes">05</td>
+                <td class="nameBr">Huynh Huu An</td>
+                <td class="title">Head First Design Patterns</td>
+                <td class="inputState">Book</td>
+                <td class="bor">2021-4-20</td>
+                <td class="return">2021-4-23</td>
+                <td>
+                  <a class="remove" data-toggle="tooltip" title="Delete" href="#"> <i class="fa fa-remove"></i></a>
+                  <!-- <a class="edit" data-toggle="tooltip" title="Edit" href="#"> <i class="fa fa-edit"></i></a> -->
+                </td>
+              </tr>
+              <tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- end implement -->
+      </div>
+
+      <!-- scrip -->
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/lab1.js"></script>
 </body>
+
 </html>
